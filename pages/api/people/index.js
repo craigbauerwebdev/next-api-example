@@ -15,7 +15,6 @@ export default function handler(req, res) {
   */
   axios.get("http://tartanweddings.com/wp-json/wp/v2/tartanbook")
     .then((response) => {
-      //console.log(response);
 
       //res.end(JSON.stringify({ name: 'John Doe' }));
       res.end(JSON.stringify(response.data));
